@@ -3,8 +3,17 @@
 - **Name:** Carlos Vargas
 - **What to call them:** Carlos
 - **Pronouns:**
-- **Timezone:**
+- **Timezone:** México (UTC-6 / CST)
+- **Pronouns:**
+- **Role:** Diseñador, Marketer, aprendiendo AI Engineer
 - **Notes:**
+
+## Intereses
+
+- AI Engineering
+- Marketing digital
+- Diseño
+- Automatización con agentes
 
 ## Context
 
