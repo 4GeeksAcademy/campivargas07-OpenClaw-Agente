@@ -195,8 +195,16 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Read and organize memory files
 - Check on projects (git status, etc.)
 - Update documentation
-- Commit and push your own changes
+- Commit and push your own changes (auto-push after modifying workspace files)
 - **Review and update MEMORY.md** (see below)
+
+## 🚀 Auto-Push a GitHub
+
+Siempre que modifique archivos del workspace (IDENTITY.md, USER.md, TOOLS.md, etc.), hago commit y push automático a `origin/main` sin preguntar.
+
+- **NO** trackear archivos internos como `openclaw-workspace-state.json`
+- Mensajes de commit descriptivos en español o con emoji
+- Si el push falla (sin conexión, llave), lo intento una vez más y si no, aviso
 
 ### 🔄 Memory Maintenance (During Heartbeats)
 
