@@ -44,6 +44,20 @@ for i, e in enumerate(events, 1):
     spread = odds[0].get("details", "") if odds else ""
     ou = odds[0].get("overUnder", "") if odds else ""
 
+    # TV / Broadcast
+    broadcasts = comps.get("broadcasts", [])
+    channels = []
+    for b in broadcasts:
+        channels.extend(b.get("names", []))
+    # Fallback to geoBroadcasts for more detail
+    if not channels:
+        geo = comps.get("geoBroadcasts", [])
+        for g in geo:
+            media = g.get("media", {})
+            if isinstance(media, dict):
+                channels.append(media.get("shortName", "") or media.get("name", ""))
+    tv_str = ", ".join(filter(None, channels)) or "—"
+
     dt = comps.get("date", e.get("date", ""))
     try:
         game_time = datetime.fromisoformat(dt.replace("Z", "+00:00")).strftime("%I:%M %p ET")
@@ -53,7 +67,8 @@ for i, e in enumerate(events, 1):
     print(f"{i}. {name}")
     print(f"   {t1:25s} ({wl1:10s}) vs {t2:25s} ({wl2:10s})")
     print(f"   Venue: {venue}")
-    print(f"   Time: {game_time}  |  Score: {r1} - {r2}  |  {status}")
+    print(f"   Time: {game_time}  |  TV: {tv_str}")
+    print(f"   Score: {r1} - {r2}  |  {status}")
     if spread or ou:
         print(f"   Odds: {spread}  O/U {ou}")
     print()
