@@ -11,6 +11,10 @@
 ## Intereses
 
 - AI Engineering
+- IA local (modelos locales, Ollama, etc.)
+- OpenCode / editores de código basados en terminal
+- Python
+- Aprender inglés
 - Marketing digital
 - Diseño
 - Automatización con agentes
