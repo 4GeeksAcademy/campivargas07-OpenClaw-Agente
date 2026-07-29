@@ -291,4 +291,4 @@ Se creó `skills/feedback-proyectos/SKILL.md` con:
 - Academy ID: 6 (4Geeks Madrid)
 
 **Fecha de creación:** 29 de julio de 2026
-**Autor:** agentclaw 🕵️ + Carlos Vargas
+**Autor:** agentclaw 🕵️ + Carlos Vargas  
